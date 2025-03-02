@@ -1,8 +1,8 @@
 {
-  "name": "react-native-microphone-stream",
-  "version": "0.0.1",
+  "name": "react-native-mic-stream",
+  "version": "0.0.3",
   "description": "React Native module used for two-way audio",
-  "author": "Chad Smith <chad@developer.email> (https://github.com/chadsmith)",
+  "author": "Chad Smith <chad@developer.email> (https://github.com/chadsmith) - Editted by Oscar Muya",
   "license": "MIT",
   "contributors": [
     {
@@ -16,10 +16,10 @@
     "recording",
     "microphone"
   ],
-  "homepage": "https://github.com/chadsmith/react-native-microphone-stream",
+  "homepage": "https://github.com/oscarmuya/react-native-mic-stream.git",
   "repository": {
     "type": "git",
-    "url": "git@github.com:chadsmith/react-native-microphone-stream.git"
+    "url": "git@github.com:oscarmuya/react-native-mic-stream.git"
   },
   "main": "MicrophoneStream.js",
   "peerDependencies": {
