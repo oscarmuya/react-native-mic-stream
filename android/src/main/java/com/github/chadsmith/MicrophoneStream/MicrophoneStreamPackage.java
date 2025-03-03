@@ -1,4 +1,4 @@
-package com.github.oscarmuya.MicrophoneStream;
+package com.github.chadsmith.MicrophoneStream;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

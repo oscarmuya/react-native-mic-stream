@@ -1,4 +1,5 @@
-package com.github.oscarmuya.MicrophoneStream;
+package com.github.chadsmith
+.MicrophoneStream;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;
