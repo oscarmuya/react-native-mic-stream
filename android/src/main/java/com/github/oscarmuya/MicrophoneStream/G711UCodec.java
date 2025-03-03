@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.chadsmith.MicrophoneStream;
+package com.github.oscarmuya.MicrophoneStream;
 
 public class G711UCodec {
 
