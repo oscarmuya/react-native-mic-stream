@@ -121,18 +121,13 @@ class MicrophoneStreamModule extends ReactContextBaseJavaModule {
     }
 
     private void recording() {
-        short buffer[] = new short[bufferSize];
-        byte encoded[] = new byte[bufferSize];
-        G711UCodec codec = new G711UCodec();
-
-        while (running && !reactContext.getCatalystInstance().isDestroyed()) {
+        short[] buffer = new short[bufferSize];
+        while (running && reactContext.hasActiveReactInstance()) {
             WritableArray data = Arguments.createArray();
             audioRecord.read(buffer, 0, bufferSize);
-            codec.encode(buffer, bufferSize, encoded, 0);
-            for (byte value : encoded) {
-                data.pushInt((int) value);
+            for (short value : buffer) {
+                data.pushInt(value);
             }
             eventEmitter.emit("audioData", data);
-        }
     }
 }
